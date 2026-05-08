@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aaron Miller — Full Stack Developer</title>
+  <title>Aaron Miller — Software Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
@@ -503,11 +503,11 @@
 
   <!-- Hero -->
   <section id="hero">
-    <div class="hero-tag">// Full Stack Developer</div>
+    <div class="hero-tag">// Software Developer</div>
     <h1>Aaron <span>Miller</span></h1>
     <p class="hero-sub">
-      Full-stack developer with a CS + Mathematics degree (Wittenberg '25) and a Security+ certification.
-      I ship production software — Python, FastAPI, PostgreSQL, React — with security built in from the start.
+      Software developer with a CS + Mathematics degree (Wittenberg '25) and a Security+ certification.
+      I build backend systems and APIs — Python, C#, FastAPI, ASP.NET Core, PostgreSQL — with a focus on reliability and observability.
     </p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -530,10 +530,11 @@
           to software development.
         </p>
         <p>
-          I like building things that are <strong>secure by design</strong> — authentication systems,
-          relational data models, clean REST APIs. The security background isn't a detour;
-          it's how I think about code: auth flows, access control, and data integrity from
-          the start, not bolted on later.
+          I'm drawn to the <strong>backend and reliability side</strong> of software — building APIs,
+          designing data models, and understanding how systems behave under real conditions.
+          My most recent project instruments a C# ASP.NET Core API with Prometheus and Grafana
+          to track SLIs and error budget burn rate in real time, with Locust running load tests
+          in the background. I like knowing why systems break, not just that they do.
         </p>
         <p>
           When I'm not coding I'm on a volleyball court — 4-year varsity athlete, back-to-back
@@ -575,9 +576,31 @@
         </div>
       </div>
 
-      <div class="project-placeholder">
-        <div class="placeholder-dot"></div>
-        <span>Second project coming soon</span>
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-name">ASP.NET Observability API</div>
+          <div class="project-status">Local / GitHub</div>
+        </div>
+        <p class="project-desc">
+          A C# ASP.NET Core REST API fully instrumented for reliability observability.
+          Prometheus scrapes live SLIs — error rate, latency, request volume — and tracks
+          them against a configurable SLO target. A Grafana dashboard surfaces real-time
+          error budget burn rate so you can see reliability health at a glance without
+          manual querying. Locust runs load tests in the background generating realistic
+          traffic. Everything spins up with a single Docker Compose command.
+        </p>
+        <div class="project-stack">
+          <span class="tag">C#</span>
+          <span class="tag">ASP.NET Core</span>
+          <span class="tag">Prometheus</span>
+          <span class="tag">Grafana</span>
+          <span class="tag">Locust</span>
+          <span class="tag">Docker Compose</span>
+          <span class="tag">SLI / SLO</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/MillerA5051/c-asp.net-api-" target="_blank">→ GitHub</a>
+        </div>
       </div>
     </div>
   </section>
@@ -591,25 +614,25 @@
         <div class="skill-group">
           <div class="skill-group-label">Languages</div>
           <div class="skill-list">
-            Python 3<br>JavaScript<br>Java<br>HTML5
+            Python<br>C#<br>Java<br>JavaScript<br>SQL<br>HTML5
           </div>
         </div>
         <div class="skill-group">
           <div class="skill-group-label">Backend</div>
           <div class="skill-list">
-            FastAPI<br>PostgreSQL<br>SQLAlchemy<br>REST APIs<br>JWT Auth
+            FastAPI<br>ASP.NET Core<br>PostgreSQL<br>SQLAlchemy<br>REST APIs<br>JWT Auth
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-group-label">Frontend</div>
+          <div class="skill-group-label">Observability & DevOps</div>
           <div class="skill-list">
-            React<br>Vite<br>Axios
+            Prometheus<br>Grafana<br>Locust<br>Docker<br>Docker Compose<br>Git
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-group-label">Tools & Security</div>
+          <div class="skill-group-label">Frontend & Security</div>
           <div class="skill-list">
-            Git<br>CompTIA Security+<br>Wireshark<br>Network Analysis
+            React<br>CompTIA Security+<br>Wireshark<br>Active Directory<br>Entra ID
           </div>
         </div>
       </div>
@@ -622,7 +645,7 @@
       <div class="section-label">// 04</div>
       <h2 class="section-title">Contact</h2>
       <p style="color:var(--text-dim); font-size:15px; margin-bottom:2rem; max-width:480px;">
-        I'm currently open to full stack and software engineering roles — remote, hybrid, or on-site anywhere.
+        I'm currently open to software engineering and SRE roles — remote, hybrid, or on-site in the Ohio area.
         Feel free to reach out.
       </p>
       <div class="contact-block">
